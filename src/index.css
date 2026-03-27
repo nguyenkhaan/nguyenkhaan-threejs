@@ -1,1 +1,59 @@
 @import 'tailwindcss';
+
+/* 1. Define custom colors and shadows as CSS variables */
+@theme {
+  --color-text: #ffffff;
+  --color-primary: #050816;
+  --color-secondary: #aaa6c3;
+  --color-tertiary: #151030;
+  --color-black-100: #100d25;
+  --color-black-200: #090325;
+  --color-white-100: #f3f3f3;
+
+  --shadow-card: 0px 35px 120px -15px #211e35;
+}
+
+/* 2. Apply custom font sizes, screens, or extend Tailwind if needed */
+@media (min-width: 450px) {
+  /* xs breakpoint */
+}
+
+/* 3. Background images */
+.hero-pattern {
+  background-image: url('/src/assets/herobg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* 4. Example of using colors and shadow */
+.text-text {
+  color: var(--color-text);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.bg-tertiary {
+  background-color: var(--color-tertiary);
+}
+
+.bg-black-100 {
+  background-color: var(--color-black-100);
+}
+
+.bg-black-200 {
+  background-color: var(--color-black-200);
+}
+
+.bg-white-100 {
+  background-color: var(--color-white-100);
+}
+
+.shadow-card {
+  box-shadow: var(--shadow-card);
+}

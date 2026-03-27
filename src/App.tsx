@@ -1,6 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 function App() {
-    return <div>Hello world</div>;
+    return (
+        <BrowserRouter>
+            <div className="flex w-screen min-h-screen bg-black text-text">
+                Navbar PageSection - We will make all things in page.tsx Footer
+            </div>
+        </BrowserRouter>
+    );
 }
 export default App;
