@@ -9,7 +9,7 @@ function Navbar() {
     const [showMenu, setShowMenu] = useState(false);
     return (
         <nav
-            className={`${styles.paddingX} w-screen py-3 bg-primary text-white-100 flex items-center justify-between top-0 fixed left-0 right-0 z-20`}
+            className={`${styles.paddingX} w-screen py-3 bg-primary/40 text-white-100 backdrop-blur-md flex items-center justify-between top-0 fixed left-0 right-0 z-20`}
         >
             <Link to={'/'} className="flex items-center gap-3">
                 <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
