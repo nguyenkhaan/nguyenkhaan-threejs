@@ -20,12 +20,21 @@ function DragonModel() {
 
     return (
         <mesh>
-            <hemisphereLight intensity={4} />
+            <hemisphereLight intensity={6} />
             <pointLight position={[20, 10, 10]} intensity={1} />
+            <spotLight
+                position={[-20, 50, 10]}
+                intensity={50}
+                angle={0.35}
+                penumbra={1}
+                decay={2}
+                distance={200}
+                castShadow
+            />
             <primitive
                 scale={0.01}
                 object={scene}
-                position={[-4, -1, -1.5]}
+                position={[-4, -0.5, -1.5]}
             ></primitive>
         </mesh>
     );

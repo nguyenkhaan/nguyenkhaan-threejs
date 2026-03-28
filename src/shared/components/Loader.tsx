@@ -4,9 +4,9 @@ import { useProgress, Html } from '@react-three/drei';
 export default function Loader() {
     const { progress } = useProgress();
     return (
-        <Html className="canvas-loader">
-            <p className="font-black text-base mt-40 text-[#f1f1f1]">
-                {progress.toFixed(2)}
+        <Html className="canvas-load">
+            <p className="font-black md:text-lg text-base xl:text-2xl mt-40 text-[#f1f1f1]">
+                {progress.toFixed(2)}%
             </p>
         </Html>
     );

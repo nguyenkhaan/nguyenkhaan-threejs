@@ -2,6 +2,7 @@ import herobg from '../../assets/herobg.png';
 import { styles } from '../../shared/styles/styles';
 // import ComputerCanvas from "../../shared/canvas/ComputerCanvas"
 import DragonCanvas from '../../shared/canvas/DragonCanvas';
+import { motion } from 'framer-motion';
 function Landing() {
     return (
         <div className="w-full min-h-screen">
@@ -33,6 +34,24 @@ function Landing() {
                     </div>
                 </div>
                 <DragonCanvas />
+                <div className="flex -mt-20 items-center justify-center w-full">
+                    <a href="#about">
+                        <div className="w-9 h-16 border-secondary border-4 rounded-3xl relative">
+                            <motion.div
+                                className="w-3 h-3 mx-auto rounded-full bg-secondary"
+                                animate={{
+                                    y: [8, 36, 8],
+                                }}
+                                transition={{
+                                    repeat: Infinity,
+                                    repeatType: 'loop',
+                                    ease: 'linear',
+                                    duration: 1.5,
+                                }}
+                            ></motion.div>
+                        </div>
+                    </a>
+                </div>
             </section>
         </div>
     );
