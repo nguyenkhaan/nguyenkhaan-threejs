@@ -11,7 +11,6 @@ interface SkillCardProps {
     index: number;
 }
 function SkillCard({ title, icon, index }: SkillCardProps) {
-    console.log(title, icon);
     return (
         // xs is very small, so we set it ot the full width
         <Tilt
@@ -52,7 +51,7 @@ function AboutSection() {
                 solutions that solve real-world problems. Let's work together to
                 bring your ideas to life!
             </p>
-            <div className="my-8 flex sm:flex-row flex-col justify-center items-center sm:justify-between gap-5">
+            <div className="sm:mt-20 mt-12 flex sm:flex-row flex-col justify-center items-center sm:justify-between gap-5">
                 {overviewSkilss.map((skill, index) => {
                     return (
                         <SkillCard

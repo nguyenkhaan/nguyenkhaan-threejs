@@ -15,7 +15,7 @@ export function SectionLayout({ id, children }: SectionLayoutProps) {
             whileInView={'show'}
             viewport={{ once: true, amount: 0.25 }}
             id={id}
-            className={`mx-auto ${styles.padding} max-w-7xl z-0 relative`}
+            className={`mx-auto ${styles.padding} max-w-7xl z-0 relative min-h-screen`}
         >
             {children}
         </motion.section>
