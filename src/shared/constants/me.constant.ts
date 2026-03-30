@@ -20,7 +20,9 @@ import ollama from '../../assets/tech/ollama.png';
 import python from '../../assets/tech/python.png';
 import reactjs from '../../assets/tech/reactjs.png';
 import tailwind from '../../assets/tech/tailwind.png';
-
+//Projects
+import rainyword from '../../assets/works/rainyword.png';
+import stkt from '../../assets/works/stkt.png';
 export const overviewSkilss = [
     {
         title: 'Frontend Developer',
@@ -160,5 +162,46 @@ export const technologies = [
     {
         name: 'Ollama',
         icon: ollama,
+    },
+];
+
+export const projects = [
+    {
+        title: 'Rainy Word Coders',
+        imgUrl: rainyword,
+        url: 'Private Link',
+        description:
+            'An English game learning platform. It helps students to learn English through a game, currently using by over 10000 students in Thu Duc - Ho Chi Minh city',
+        tags: [
+            {
+                name: 'reactjs',
+                color: 'blue-text-gradient',
+            },
+            {
+                name: 'expressjs',
+                color: 'green-text-gradient',
+            },
+            {
+                name: 'css',
+                color: 'pink-text-gradient',
+            },
+        ],
+    },
+    {
+        title: 'Sổ tay kiến thức',
+        imgUrl: stkt,
+        url: 'Private Link',
+        description:
+            'A well-structured notebook website designed for reviewing and studying key subjects at UIT, including Data Structures and Algorithms (DSA), Object-Oriented Programming (OOP), Databases, and Fundamental Programming.',
+        tags: [
+            {
+                name: 'docusarus',
+                color: 'green-text-gradient',
+            },
+            {
+                name: 'tailwindcss',
+                color: 'blue-text-gradient',
+            },
+        ],
     },
 ];
