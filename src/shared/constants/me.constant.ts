@@ -23,6 +23,9 @@ import tailwind from '../../assets/tech/tailwind.png';
 //Projects
 import rainyword from '../../assets/works/rainyword.png';
 import stkt from '../../assets/works/stkt.png';
+//Feedbacks
+import emilia from '../../assets/feedbacks/emilia.jpg';
+import eri from '../../assets/feedbacks/eri.jpg';
 export const overviewSkilss = [
     {
         title: 'Frontend Developer',
@@ -203,5 +206,20 @@ export const projects = [
                 color: 'blue-text-gradient',
             },
         ],
+    },
+];
+
+export const feedbacks = [
+    {
+        name: 'Emily-chan',
+        designation: 'CTO of 456 Enterprises',
+        avatar: emilia,
+        talk: 'After Rick optimized our website, our traffic increased by 50%. He is very good and sweet',
+    },
+    {
+        name: 'Eri chan',
+        designation: 'COO of DEF Corp',
+        avatar: eri,
+        talk: "I've never met a web developer who truly cares about their clients' success like Ruby does.",
     },
 ];

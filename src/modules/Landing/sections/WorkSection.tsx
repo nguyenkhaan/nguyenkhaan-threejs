@@ -27,8 +27,8 @@ function ProjectCard({
             tiltEnable
             className="w-[360px]"
             scale={1.1}
-            tiltMaxAngleX={40}
-            tiltMaxAngleY={40}
+            tiltMaxAngleX={30}
+            tiltMaxAngleY={30}
             glareColor="#aaa6c3"
         >
             <motion.div

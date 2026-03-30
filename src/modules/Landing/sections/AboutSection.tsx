@@ -16,7 +16,7 @@ function SkillCard({ title, icon, index }: SkillCardProps) {
         <Tilt
             glareEnable
             tiltEnable
-            className="w-[250px]"
+            className="w-[250px] mx-auto"
             scale={1.1}
             tiltMaxAngleX={30}
             tiltMaxAngleY={30}
@@ -51,7 +51,7 @@ function AboutSection() {
                 solutions that solve real-world problems. Let's work together to
                 bring your ideas to life!
             </p>
-            <div className="sm:mt-20 mt-12 flex sm:flex-row flex-col justify-center items-center sm:justify-between gap-5">
+            <div className="sm:mt-20 mt-12 flex sm:flex-row flex-wrap flex-col justify-center items-center sm:justify-between gap-5">
                 {overviewSkilss.map((skill, index) => {
                     return (
                         <SkillCard
