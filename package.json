@@ -20,6 +20,7 @@
     "dependencies": {
         "@commitlint/cli": "^20.5.0",
         "@commitlint/config-conventional": "^20.5.0",
+        "@emailjs/browser": "^4.4.1",
         "@react-three/drei": "^10.7.7",
         "@react-three/fiber": "^9.5.0",
         "@tailwindcss/vite": "^4.2.2",

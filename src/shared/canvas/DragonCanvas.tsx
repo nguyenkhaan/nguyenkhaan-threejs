@@ -12,7 +12,7 @@ function DragonModel() {
     const { scene, animations } = useGLTF('dragon__thera/scene.gltf');
     const { actions, names } = useAnimations(animations, scene);
     useEffect(() => {
-        console.log(actions, names);
+        // console.log(actions, names);
         if (actions && names.length > 0) {
             actions[names[0]]?.play(); //Run the first animation
         }
