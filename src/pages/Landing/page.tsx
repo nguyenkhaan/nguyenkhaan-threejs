@@ -7,7 +7,7 @@ import TestimonialSection from '../../modules/Landing/sections/TestimonialSectio
 import ContactSection from '../../modules/Landing/sections/ContactSection';
 function Landing() {
     return (
-        <div className="w-full min-h-screen bg-primary">
+        <div className="w-full relative min-h-screen bg-primary">
             <HeroSection />
             <AboutSection />
             <ExperienceSection />
