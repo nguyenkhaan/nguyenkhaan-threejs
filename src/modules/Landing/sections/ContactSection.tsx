@@ -11,42 +11,42 @@ function ContactSection() {
             <StarsCanvas />
             <motion.div
                 variants={slideIn('left', 'tween', 0.2, 1)}
-                className="h-[200vh] xl:h-screen w-full max-w-7xl xl:flex-row flex-col items-center flex justify-center gap-6 md:justify-between overflow-visible"
+                className="w-full max-w-7xl flex flex-col xl:flex-row items-center xl:items-stretch justify-center xl:justify-between gap-6 xl:gap-8 min-h-screen overflow-hidden"
             >
-                <div className="flex-[0.75] w-full h-fit bg-black-100  rounded-2xl p-8">
+                <div className="flex-1 w-full h-fit xl:h-full bg-black-100 rounded-2xl p-6 sm:p-8">
                     <h3 className={`${styles.sectionSubText}`}>GET IN TOUCH</h3>
                     <h1 className={`${styles.sectionHeadText}`}>Contact.</h1>
-                    <form className="flex flex-col gap-8 mt-12">
-                        <label className="flex flex-col text-lg">
-                            <span className="text-white text-xl font-medium mb-4">
+                    <form className="flex flex-col gap-6 sm:gap-8 mt-12">
+                        <label className="flex flex-col text-sm sm:text-base">
+                            <span className="text-white text-base sm:text-xl font-medium mb-2 sm:mb-4">
                                 Your name
                             </span>
                             <input
                                 type="text"
                                 placeholder="What's your name?"
-                                className="bg-tertiary py-4 rounded-lg outline-none border-none font-medium px-6 text-white placeholder:text-secondary"
+                                className="bg-tertiary py-3 sm:py-4 rounded-lg outline-none border-none font-medium px-4 sm:px-6 text-white placeholder:text-secondary text-sm sm:text-base"
                             />
                         </label>
 
-                        <label className="flex flex-col text-lg">
-                            <span className="text-white text-xl font-medium mb-4">
+                        <label className="flex flex-col text-sm sm:text-base">
+                            <span className="text-white text-base sm:text-xl font-medium mb-2 sm:mb-4">
                                 Your email
                             </span>
                             <input
-                                type="text"
+                                type="email"
                                 placeholder="What's your email?"
-                                className="bg-tertiary py-4 rounded-lg outline-none border-none font-medium px-6 text-white placeholder:text-secondary"
+                                className="bg-tertiary py-3 sm:py-4 rounded-lg outline-none border-none font-medium px-4 sm:px-6 text-white placeholder:text-secondary text-sm sm:text-base"
                             />
                         </label>
 
-                        <label className="flex flex-col text-lg">
-                            <span className="text-white text-xl font-medium mb-4">
+                        <label className="flex flex-col text-sm sm:text-base">
+                            <span className="text-white text-base sm:text-xl font-medium mb-2 sm:mb-4">
                                 Your message
                             </span>
                             <textarea
-                                rows={7}
+                                rows={5}
                                 placeholder='What"s your message'
-                                className="bg-tertiary py-4 rounded-lg outline-none border-none font-medium px-6 text-white placeholder:text-secondary"
+                                className="bg-tertiary py-3 sm:py-4 rounded-lg outline-none border-none font-medium px-4 sm:px-6 text-white placeholder:text-secondary text-sm sm:text-base resize-none"
                             ></textarea>
                         </label>
                         <button
@@ -55,7 +55,7 @@ function ContactSection() {
                                 e.preventDefault();
                                 toast.success('Thank you for your letter');
                             }}
-                            className="py-4 w-fit rounded-2xl text-base sm:text-lg px-8 cursor-pointer inline font-bold text-white bg-tertiary"
+                            className="py-3 sm:py-4 w-fit rounded-2xl text-sm sm:text-base md:text-lg px-6 sm:px-8 cursor-pointer font-bold text-white bg-tertiary hover:opacity-90 transition-opacity duration-300"
                         >
                             Send
                         </button>
@@ -63,7 +63,7 @@ function ContactSection() {
                 </div>
                 <motion.div
                     variants={slideIn('right', 'tween', 0.2, 1)}
-                    className="flex-1 xl:h-full"
+                    className="w-full xl:flex-1 h-[300px] sm:h-[400px] xl:h-full"
                 >
                     <BlackMagicianGirlCanvas />
                 </motion.div>

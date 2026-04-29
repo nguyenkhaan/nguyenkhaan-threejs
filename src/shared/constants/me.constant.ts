@@ -21,6 +21,7 @@ import python from '../../assets/tech/python.png';
 import reactjs from '../../assets/tech/reactjs.png';
 import tailwind from '../../assets/tech/tailwind.png';
 //Projects
+import homediai from '../../assets/homedAI.jpg';
 import rainyword from '../../assets/works/rainyword.png';
 import stkt from '../../assets/works/stkt.png';
 //Feedbacks
@@ -57,10 +58,10 @@ export type experienceType = {
 export const experiences = [
     {
         title: 'React.js Developer',
-        company_name: 'Starbucks',
+        company_name: 'Student',
         icon: starbucks,
         iconBg: '#383E56',
-        date: 'March 2020 - April 2021',
+        date: 'March 2024 - Now',
         points: [
             'Developing and maintaining web applications using React.js and other related technologies.',
             'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
@@ -69,21 +70,22 @@ export const experiences = [
         ],
     },
     {
-        title: 'React Native Developer',
-        company_name: 'Tesla',
+        title: 'NestJS Developer',
+        company_name: 'Student',
         icon: tesla,
         iconBg: '#E6DEDD',
-        date: 'Jan 2021 - Feb 2022',
+        date: '2025 - Now',
         points: [
-            'Developing and maintaining web applications using React.js and other related technologies.',
-            'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-            'Implementing responsive design and ensuring cross-browser compatibility.',
-            'Participating in code reviews and providing constructive feedback to other developers.',
+            'Developing and maintaining scalable backend services using NestJS and related technologies.',
+            'Designing and implementing RESTful APIs and integrating with databases such as MongoDB or PostgreSQL.',
+            'Collaborating with frontend developers, designers, and product managers to deliver high-quality features.',
+            'Optimizing application performance, ensuring security, and handling authentication/authorization.',
+            'Participating in code reviews and improving code quality through best practices and clean architecture.',
         ],
     },
     {
         title: 'Web Developer',
-        company_name: 'Shopify',
+        company_name: 'Student',
         icon: shopify,
         iconBg: '#383E56',
         date: 'Jan 2022 - Jan 2023',
@@ -96,7 +98,7 @@ export const experiences = [
     },
     {
         title: 'Full stack Developer',
-        company_name: 'Meta',
+        company_name: 'Student',
         icon: meta,
         iconBg: '#E6DEDD',
         date: 'Jan 2023 - Present',
@@ -172,7 +174,7 @@ export const projects = [
     {
         title: 'Rainy Word Coders',
         imgUrl: rainyword,
-        url: 'Private Link',
+        url: 'https://rainywords.uit.edu.vn/hcm-linhxuan',
         description:
             'An English game learning platform. It helps students to learn English through a game, currently using by over 10000 students in Thu Duc - Ho Chi Minh city',
         tags: [
@@ -193,7 +195,7 @@ export const projects = [
     {
         title: 'Sổ tay kiến thức',
         imgUrl: stkt,
-        url: 'Private Link',
+        url: 'https://handbook.bhtcnpm.com/',
         description:
             'A well-structured notebook website designed for reviewing and studying key subjects at UIT, including Data Structures and Algorithms (DSA), Object-Oriented Programming (OOP), Databases, and Fundamental Programming.',
         tags: [
@@ -204,6 +206,23 @@ export const projects = [
             {
                 name: 'tailwindcss',
                 color: 'blue-text-gradient',
+            },
+        ],
+    },
+    {
+        title: 'HomedAI',
+        imgUrl: homediai,
+        url: 'https://www.facebook.com/photo/?fbid=1436476295163193&set=a.466700278807471',
+        description:
+            'A healthcare application for individuals and families, integrated with AI, ranked among the top 23 in the Webndev Adventure 2026 competition.',
+        tags: [
+            {
+                name: 'react-native',
+                color: 'blue-text-gradient',
+            },
+            {
+                name: 'fastapi',
+                color: 'green-text-gradient',
             },
         ],
     },

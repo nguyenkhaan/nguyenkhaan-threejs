@@ -3,7 +3,7 @@ import AboutSection from '../../modules/Landing/sections/AboutSection';
 import ExperienceSection from '../../modules/Landing/sections/Experience';
 import TechSection from '../../modules/Landing/sections/TechSection';
 import WorkSection from '../../modules/Landing/sections/WorkSection';
-import TestimonialSection from '../../modules/Landing/sections/TestimonialSection';
+// import TestimonialSection from '../../modules/Landing/sections/TestimonialSection';
 import ContactSection from '../../modules/Landing/sections/ContactSection';
 function Landing() {
     return (
@@ -13,7 +13,8 @@ function Landing() {
             <ExperienceSection />
             <TechSection />
             <WorkSection />
-            <TestimonialSection />
+            {/* <TestimonialSection /> */}
+            <div className="my-6 bg-transparent w-4 h-full"></div>
             <ContactSection />
         </div>
     );
